@@ -35,7 +35,7 @@ const TimelineItem = ({ year, title, company, description, delay, isHighlight = 
                 <ul className="text-neutral-400 text-sm leading-relaxed space-y-2 list-none">
                     {description.map((item, idx) => (
                         <li key={idx} className="flex gap-2 items-start">
-                            <span className="text-teal-500 mt-0.5 opacity-70">–</span>
+                            <div className="w-1.5 h-1.5 bg-teal-400 rotate-45 mt-1.5 shrink-0" />
                             <span>{item}</span>
                         </li>
                     ))}

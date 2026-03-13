@@ -35,7 +35,7 @@ const ProjectCard = ({ title, description, tags, link, github, features, delay }
                     <ul className="text-neutral-400 text-sm space-y-2 mb-8 flex-grow list-none">
                         {features.map((feature, idx) => (
                             <li key={idx} className="flex gap-2 items-start shrink-0">
-                                <span className="text-teal-500 mt-1 shrink-0">–</span>
+                                <div className="w-1.5 h-1.5 bg-teal-400 rotate-45 mt-1.5 shrink-0" />
                                 <span className="leading-snug">{feature}</span>
                             </li>
                         ))}
