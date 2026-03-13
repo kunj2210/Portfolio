@@ -8,8 +8,8 @@ const Hero = () => {
         <section id="home" className="relative min-h-screen flex text-left items-center justify-center pt-20 overflow-hidden">
 
             {/* Background Glows */}
-            <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px] pointer-events-none -z-10 mix-blend-screen" />
-            <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-[100px] pointer-events-none -z-10 mix-blend-screen" />
+            <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-white/5 rounded-full blur-[120px] pointer-events-none -z-10 mix-blend-screen" />
+            <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-white/5 rounded-full blur-[100px] pointer-events-none -z-10 mix-blend-screen" />
 
             {/* Floating 3D Orb Particles */}
             <div className="orb w-3 h-3 animate-float" style={{ top: '20%', left: '10%', animationDelay: '0s' }} />
@@ -32,7 +32,7 @@ const Hero = () => {
                     <motion.div
                         animate={{ rotateY: 360 }}
                         transition={{ duration: 8, ease: 'linear', repeat: Infinity }}
-                        className="absolute inset-[-8px] rounded-full border border-blue-500/30 border-dashed"
+                        className="absolute inset-[-8px] rounded-full border border-white/20 border-dashed"
                         style={{ transformStyle: 'preserve-3d' }}
                     />
                     {/* Pulsing ring */}
@@ -57,7 +57,7 @@ const Hero = () => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-card mb-8 animate-float-slow"
                 >
-                    <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
+                    <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
                     <span className="text-sm font-medium text-neutral-300">Available for work</span>
                 </motion.div>
 

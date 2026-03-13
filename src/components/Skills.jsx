@@ -9,7 +9,7 @@ const SkillPill = ({ name, delay }) => (
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ delay, duration: 0.3 }}
-        className="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-neutral-300 text-sm font-medium hover:bg-blue-500/10 hover:text-blue-400 hover:border-blue-500/30 transition-colors cursor-default whitespace-nowrap"
+        className="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-neutral-300 text-sm font-medium hover:bg-white/5 hover:text-neutral-300 hover:border-white/20 transition-colors cursor-default whitespace-nowrap"
     >
         {name}
     </motion.div>
@@ -22,10 +22,10 @@ const SkillCategory = ({ title, icon: Icon, skills, delay }) => (
         viewport={{ once: true }}
         transition={{ delay, duration: 0.5 }}
     >
-        <TiltCard className="glass-card p-8 flex flex-col h-full bg-white/5 border border-white/10 rounded-2xl hover:border-blue-500/30 hover:bg-white/[0.07] hover:shadow-2xl hover:shadow-blue-500/20 group transition-all duration-300 overflow-hidden">
+        <TiltCard className="glass-card p-8 flex flex-col h-full bg-white/5 border border-white/10 rounded-2xl hover:border-white/20 hover:bg-white/[0.07] hover:shadow-2xl hover:shadow-white/10 group transition-all duration-300 overflow-hidden">
 
             <div className="flex items-center gap-4 mb-8">
-                <div className="w-12 h-12 rounded-xl bg-blue-500/5 border border-blue-500/10 flex items-center justify-center text-blue-400 group-hover:bg-blue-500/10 group-hover:border-blue-500/20 transition-colors" style={{ transform: 'translateZ(20px)' }}>
+                <div className="w-12 h-12 rounded-xl bg-white/[0.03] border border-white/10 flex items-center justify-center text-neutral-300 group-hover:bg-white/5 group-hover:border-white/15 transition-colors" style={{ transform: 'translateZ(20px)' }}>
                     <Icon size={24} />
                 </div>
                 <h3 className="text-xl font-bold text-white" style={{ transform: 'translateZ(15px)' }}>{title}</h3>
@@ -55,7 +55,7 @@ const Skills = () => {
         {
             title: "Frameworks & Web",
             icon: Globe,
-            skills: ["MERN Stack", "React.js", "Node.js", "Express", "MongoDB", "HTML", "CSS"]
+            skills: ["React.js", "Node.js", "Express", "MongoDB", "HTML", "CSS"]
         },
         {
             title: "Tools & Analytics",
@@ -73,9 +73,9 @@ const Skills = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/5 border border-blue-500/10 mb-6"
+                        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.03] border border-white/10 mb-6"
                     >
-                        <span className="text-xs font-bold text-blue-400 tracking-widest uppercase">Expertise</span>
+                        <span className="text-xs font-bold text-neutral-300 tracking-widest uppercase">Expertise</span>
                     </motion.div>
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}

@@ -6,7 +6,7 @@ const Contact = () => {
     return (
         <section id="contact" className="section relative overflow-hidden">
             {/* Background decoration */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-500/5 rounded-full blur-[120px] -z-10" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/[0.03] rounded-full blur-[120px] -z-10" />
 
             <div className="container">
                 <div className="grid md:grid-cols-2 gap-16 items-start">
@@ -16,7 +16,7 @@ const Contact = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h2 className="text-sm uppercase tracking-[0.3em] text-blue-400 font-semibold mb-3">Contact</h2>
+                        <h2 className="text-sm uppercase tracking-[0.3em] text-neutral-300 font-semibold mb-3">Contact</h2>
                         <h3 className="text-4xl md:text-5xl font-bold mb-8">Let's Create <br /><span className="text-gradient">Something Great</span></h3>
                         <p className="text-secondary text-lg mb-10">
                             Have a project in mind or just want to say hi? Feel free to reach out.
@@ -31,7 +31,7 @@ const Contact = () => {
                                 { icon: MapPin, label: "Location", value: "Surat, India" }
                             ].map((item, i) => (
                                 <div key={i} className="flex items-center gap-4">
-                                    <div className="w-12 h-12 glass flex items-center justify-center text-blue-400">
+                                    <div className="w-12 h-12 glass flex items-center justify-center text-neutral-300">
                                         <item.icon size={20} />
                                     </div>
                                     <div>
@@ -57,7 +57,7 @@ const Contact = () => {
                                     <input
                                         type="text"
                                         placeholder="John Doe"
-                                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-blue-500 transition-colors"
+                                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-white/40 transition-colors"
                                     />
                                 </div>
                                 <div className="space-y-2">
@@ -65,7 +65,7 @@ const Contact = () => {
                                     <input
                                         type="email"
                                         placeholder="john@example.com"
-                                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-blue-500 transition-colors"
+                                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-white/40 transition-colors"
                                     />
                                 </div>
                             </div>
@@ -74,7 +74,7 @@ const Contact = () => {
                                 <input
                                     type="text"
                                     placeholder="Inquiry"
-                                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-blue-500 transition-colors"
+                                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-white/40 transition-colors"
                                 />
                             </div>
                             <div className="space-y-2">
@@ -82,7 +82,7 @@ const Contact = () => {
                                 <textarea
                                     rows="4"
                                     placeholder="Your message here..."
-                                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-blue-500 transition-colors resize-none"
+                                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-white/40 transition-colors resize-none"
                                 ></textarea>
                             </div>
                             <button className="btn btn-primary w-full justify-center group">

@@ -13,22 +13,22 @@ const About = () => {
 
     const features = [
         {
-            icon: <Code2 className="text-blue-400" size={24} />,
+            icon: <Code2 className="text-neutral-300" size={24} />,
             title: "Frontend Development",
             description: "Building responsive and interactive user interfaces using React, HTML/CSS, and modern tailwind styling."
         },
         {
-            icon: <Database className="text-blue-400" size={24} />,
+            icon: <Database className="text-neutral-300" size={24} />,
             title: "Backend Engineering",
             description: "Creating robust APIs and server-side logic with Node.js, Express, and managing data with MongoDB."
         },
         {
-            icon: <Layout className="text-blue-400" size={24} />,
+            icon: <Layout className="text-neutral-300" size={24} />,
             title: "Data Analysis",
             description: "Strong foundation in data visualization, statistical analysis, and extracting meaningful insights from complex datasets."
         },
         {
-            icon: <Terminal className="text-blue-400" size={24} />,
+            icon: <Terminal className="text-neutral-300" size={24} />,
             title: "Tools & Technologies",
             description: "Proficient in Power BI, Excel, SQL, Git, GitHub, and experienced with data modeling and visualization tools."
         }
@@ -45,7 +45,7 @@ const About = () => {
                         viewport={{ once: true }}
                         className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 mb-6"
                     >
-                        <span className="text-xs font-semibold text-blue-400 tracking-wider uppercase">Overview</span>
+                        <span className="text-xs font-semibold text-neutral-300 tracking-wider uppercase">Overview</span>
                     </motion.div>
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
@@ -82,10 +82,10 @@ const About = () => {
                                 y: { duration: 0.15, ease: "easeOut" },
                                 scale: { duration: 0.15, ease: "easeOut" }
                             }}
-                            className="glass-card p-6 text-center hover:bg-[var(--card-bg-hover)] hover:border-blue-500/40 hover:shadow-xl hover:shadow-[var(--card-shadow-hover)] transition-colors duration-300 cursor-default"
+                            className="glass-card p-6 text-center hover:bg-[var(--card-bg-hover)] hover:border-white/25 hover:shadow-xl hover:shadow-[var(--card-shadow-hover)] transition-colors duration-300 cursor-default"
                         >
                             <div className="text-3xl md:text-4xl font-bold text-white mb-2">
-                                {stat.value}<span className="text-blue-500 text-lg sm:text-2xl">{stat.suffix}</span>
+                                {stat.value}<span className="text-white text-lg sm:text-2xl">{stat.suffix}</span>
                             </div>
                             <div className="text-sm text-neutral-400 font-medium">{stat.label}</div>
                         </motion.div>
@@ -107,7 +107,7 @@ const About = () => {
                                 scale: { duration: 0.15, ease: "easeOut" }
                             }}
                         >
-                            <TiltCard className="glass-card p-8 group hover:bg-[var(--card-bg-hover)] hover:border-blue-500/40 hover:shadow-xl hover:shadow-[var(--card-shadow-hover)] transition-colors duration-300 overflow-hidden h-full">
+                            <TiltCard className="glass-card p-8 group hover:bg-[var(--card-bg-hover)] hover:border-white/25 hover:shadow-xl hover:shadow-[var(--card-shadow-hover)] transition-colors duration-300 overflow-hidden h-full">
                                 <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform" style={{ transform: 'translateZ(18px)' }}>
                                     {feature.icon}
                                 </div>

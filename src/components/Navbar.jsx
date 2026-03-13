@@ -45,7 +45,7 @@ const Navbar = () => {
         >
             <div className="container flex items-center justify-between">
                 <Link to="/" className="text-xl font-bold tracking-tight text-white flex items-center gap-2" onClick={() => window.scrollTo(0, 0)}>
-                    <span className="w-8 h-8 rounded-lg bg-blue-500/10 flex items-center justify-center border border-blue-500/20 text-blue-400">
+                    <span className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center border border-white/15 text-neutral-300">
                         K
                     </span>
                     Kunj Lunagariya
