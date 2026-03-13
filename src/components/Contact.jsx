@@ -26,9 +26,9 @@ const Contact = () => {
 
                         <div className="space-y-6">
                             {[
-                                { icon: Mail, label: "Email", value: "hello@kunj.dev" },
-                                { icon: Phone, label: "Phone", value: "+1 (555) 000-0000" },
-                                { icon: MapPin, label: "Location", value: "Surat, India" }
+                                { icon: Mail, label: "Email", value: "kunilunagariya@gmail.com" },
+                                { icon: Phone, label: "LinkedIn", value: "linkedin.com/in/kunj-lunagariya" },
+                                { icon: MapPin, label: "Location", value: "Surat, Gujarat, India" }
                             ].map((item, i) => (
                                 <div key={i} className="flex items-center gap-4">
                                     <div className="w-12 h-12 glass flex items-center justify-center text-cyan-400">
@@ -56,7 +56,7 @@ const Contact = () => {
                                     <label className="text-sm font-medium text-secondary">Full Name</label>
                                     <input
                                         type="text"
-                                        placeholder="John Doe"
+                                        placeholder="e.g. Sarah Johnson"
                                         className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-cyan-500 transition-colors"
                                     />
                                 </div>
@@ -64,7 +64,7 @@ const Contact = () => {
                                     <label className="text-sm font-medium text-secondary">Email Address</label>
                                     <input
                                         type="email"
-                                        placeholder="john@example.com"
+                                        placeholder="e.g. sarah@company.com"
                                         className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-cyan-500 transition-colors"
                                     />
                                 </div>
@@ -73,7 +73,7 @@ const Contact = () => {
                                 <label className="text-sm font-medium text-secondary">Subject</label>
                                 <input
                                     type="text"
-                                    placeholder="Inquiry"
+                                    placeholder="e.g. Project Collaboration / Internship Opportunity"
                                     className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-cyan-500 transition-colors"
                                 />
                             </div>
@@ -81,7 +81,7 @@ const Contact = () => {
                                 <label className="text-sm font-medium text-secondary">Message</label>
                                 <textarea
                                     rows="4"
-                                    placeholder="Your message here..."
+                                    placeholder="Hi Kunj, I came across your portfolio and would love to discuss..."
                                     className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-cyan-500 transition-colors resize-none"
                                 ></textarea>
                             </div>
