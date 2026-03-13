@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Logs
+*.log
+build_error.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Editor / OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Reference / scratch files
+reference.html
+ref2.html
+ref3.html
