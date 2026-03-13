@@ -18,7 +18,7 @@ const TimelineItem = ({ year, title, company, description, delay, isHighlight = 
         <div className="absolute left-[3px] top-2 bottom-[-8px] w-px bg-white/10 group-last:bg-transparent" />
 
         {/* Clean Minimal Marker */}
-        <div className={`absolute left-0 top-2 w-2 h-2 rounded-full ring-4 ring-[#0a0a0a] ${isHighlight ? 'bg-teal-400' : 'bg-neutral-600'} transition-colors duration-300`} />
+        <div className="absolute left-0 top-2 w-2 h-2 rounded-full ring-4 ring-[#0a0a0a] bg-teal-400" />
 
         <div className="glass-card p-6 md:p-8 hover:bg-[var(--card-bg-hover)] hover:shadow-xl hover:shadow-[var(--card-shadow-hover)] transition-all duration-300 group-hover:border-teal-500/30">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
