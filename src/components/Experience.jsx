@@ -26,7 +26,7 @@ const TimelineItem = ({ year, title, company, description, delay, isHighlight = 
                     <h4 className="text-xl font-bold text-white mb-1">{title}</h4>
                     <p className="text-sm text-teal-400 font-medium">{company}</p>
                 </div>
-                <span className={`text-xs font-semibold px-3 py-1 rounded-full border shrink-0 ${isHighlight ? 'text-teal-400 border-teal-500/30 bg-teal-500/10' : 'text-neutral-400 border-white/10 bg-white/5'}`}>
+                <span className="text-xs font-semibold px-3 py-1 rounded-full border shrink-0 text-teal-400 border-teal-500/30 bg-teal-500/10">
                     {year}
                 </span>
             </div>
