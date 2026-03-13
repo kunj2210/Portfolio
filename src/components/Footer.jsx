@@ -28,7 +28,7 @@ const Footer = () => {
                 </div>
 
                 <div className="mt-8 pt-8 border-t border-white/5 text-center text-xs text-neutral-500">
-                    ┬⌐ {new Date().getFullYear()} Kunj Lunagariya. All rights reserved.
+                    &copy; {new Date().getFullYear()} Kunj Lunagariya. All rights reserved.
                 </div>
             </div>
         </footer>
