@@ -149,7 +149,7 @@ const ContactPage = () => {
                                         value={formData.name}
                                         onChange={handleChange}
                                         className="w-full bg-[#0a0a0a] border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition-colors"
-                                        placeholder="John Doe"
+                                        placeholder="abc"
                                         required
                                     />
                                 </div>
@@ -162,7 +162,7 @@ const ContactPage = () => {
                                         value={formData.email}
                                         onChange={handleChange}
                                         className="w-full bg-[#0a0a0a] border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition-colors"
-                                        placeholder="john@example.com"
+                                        placeholder="abc@example.com"
                                         required
                                     />
                                 </div>
@@ -177,7 +177,7 @@ const ContactPage = () => {
                                     value={formData.subject}
                                     onChange={handleChange}
                                     className="w-full bg-[#0a0a0a] border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition-colors"
-                                    placeholder="How can I help you?"
+                                    placeholder="........."
                                     required
                                 />
                             </div>
