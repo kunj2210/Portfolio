@@ -56,7 +56,7 @@ const Contact = () => {
                                     <label className="text-sm font-medium text-secondary">Full Name</label>
                                     <input
                                         type="text"
-                                        placeholder="e.g. Sarah Johnson"
+                                        placeholder="Your full name"
                                         className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-cyan-500 transition-colors"
                                     />
                                 </div>
@@ -64,7 +64,7 @@ const Contact = () => {
                                     <label className="text-sm font-medium text-secondary">Email Address</label>
                                     <input
                                         type="email"
-                                        placeholder="e.g. sarah@company.com"
+                                        placeholder="Your email address"
                                         className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-cyan-500 transition-colors"
                                     />
                                 </div>
@@ -73,7 +73,7 @@ const Contact = () => {
                                 <label className="text-sm font-medium text-secondary">Subject</label>
                                 <input
                                     type="text"
-                                    placeholder="e.g. Project Collaboration / Internship Opportunity"
+                                    placeholder="What's this about?"
                                     className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-cyan-500 transition-colors"
                                 />
                             </div>
@@ -81,7 +81,7 @@ const Contact = () => {
                                 <label className="text-sm font-medium text-secondary">Message</label>
                                 <textarea
                                     rows="4"
-                                    placeholder="Hi Kunj, I came across your portfolio and would love to discuss..."
+                                    placeholder="Write your message here..."
                                     className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-cyan-500 transition-colors resize-none"
                                 ></textarea>
                             </div>
