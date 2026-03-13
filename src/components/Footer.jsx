@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -28,7 +28,7 @@ const Footer = () => {
                 </div>
 
                 <div className="mt-8 pt-8 border-t border-white/5 text-center text-xs text-neutral-500">
-                    © {new Date().getFullYear()} Kunj Lunagariya. All rights reserved.
+                    ┬⌐ {new Date().getFullYear()} Kunj Lunagariya. All rights reserved.
                 </div>
             </div>
         </footer>

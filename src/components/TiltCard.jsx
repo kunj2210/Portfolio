@@ -1,7 +1,7 @@
-import React, { useRef, useState } from 'react';
+﻿import React, { useRef, useState } from 'react';
 
 /**
- * TiltCard – wraps any content with a realistic mouse-tracking 3D perspective tilt.
+ * TiltCard ΓÇô wraps any content with a realistic mouse-tracking 3D perspective tilt.
  * Drop it in place of any wrapper div. The children are rendered in a preserve-3d layer
  * so inner elements can themselves use translateZ for depth.
  */

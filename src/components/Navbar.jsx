@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
@@ -45,7 +45,7 @@ const Navbar = () => {
         >
             <div className="container flex items-center justify-between">
                 <Link to="/" className="text-xl font-bold tracking-tight text-white flex items-center gap-2" onClick={() => window.scrollTo(0, 0)}>
-                    <span className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center border border-white/15 text-neutral-300">
+                    <span className="w-8 h-8 rounded-lg bg-teal-500/10 flex items-center justify-center border border-teal-500/20 text-teal-400">
                         K
                     </span>
                     Kunj Lunagariya
