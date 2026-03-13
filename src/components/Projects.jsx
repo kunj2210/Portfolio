@@ -10,11 +10,11 @@ const ProjectCard = ({ title, description, tags, link, github, features, delay }
         viewport={{ once: true }}
         transition={{ delay, duration: 0.6 }}
     >
-        <TiltCard className="glass-card group p-8 flex flex-col h-full hover:border-teal-500/50 hover:bg-[var(--card-bg-hover)] hover:shadow-2xl hover:shadow-teal-500/20 transition-all duration-300 overflow-hidden">
+        <TiltCard className="glass-card group p-8 flex flex-col h-full hover:border-blue-500/50 hover:bg-[var(--card-bg-hover)] hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 overflow-hidden">
 
             <div className="flex flex-col flex-grow">
                 <div className="flex justify-between items-start mb-6">
-                    <h3 className="text-2xl font-bold text-white group-hover:text-teal-400 transition-colors" style={{ transform: 'translateZ(20px)' }}>{title}</h3>
+                    <h3 className="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors" style={{ transform: 'translateZ(20px)' }}>{title}</h3>
                     <div className="flex gap-2 shrink-0">
                         {github && (
                             <a href={github} target="_blank" rel="noreferrer" className="w-8 h-8 rounded bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white/10 text-neutral-400 hover:text-white transition-colors">
@@ -35,7 +35,7 @@ const ProjectCard = ({ title, description, tags, link, github, features, delay }
                     <ul className="text-neutral-400 text-sm space-y-2 mb-8 flex-grow list-none">
                         {features.map((feature, idx) => (
                             <li key={idx} className="flex gap-2 items-start shrink-0">
-                                <span className="text-teal-500 mt-1 shrink-0">▹</span>
+                                <span className="text-blue-500 mt-1 shrink-0">▹</span>
                                 <span className="leading-snug">{feature}</span>
                             </li>
                         ))}
@@ -94,7 +94,7 @@ const Projects = () => {
                             viewport={{ once: true }}
                             className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 mb-4"
                         >
-                            <span className="text-xs font-semibold text-teal-400 tracking-wider uppercase">Portfolio</span>
+                            <span className="text-xs font-semibold text-blue-400 tracking-wider uppercase">Portfolio</span>
                         </motion.div>
                         <motion.h2
                             initial={{ opacity: 0, y: 20 }}

@@ -18,15 +18,15 @@ const TimelineItem = ({ year, title, company, description, delay, isHighlight = 
         <div className="absolute left-[3px] top-2 bottom-[-8px] w-px bg-white/10 group-last:bg-transparent" />
 
         {/* Clean Minimal Marker */}
-        <div className={`absolute left-0 top-2 w-2 h-2 rounded-full ring-4 ring-[#0a0a0a] ${isHighlight ? 'bg-teal-400' : 'bg-neutral-600'} transition-colors duration-300`} />
+        <div className={`absolute left-0 top-2 w-2 h-2 rounded-full ring-4 ring-[#0a0a0a] ${isHighlight ? 'bg-blue-400' : 'bg-neutral-600'} transition-colors duration-300`} />
 
-        <div className="glass-card p-6 md:p-8 hover:bg-[var(--card-bg-hover)] hover:shadow-xl hover:shadow-[var(--card-shadow-hover)] transition-all duration-300 group-hover:border-teal-500/30">
+        <div className="glass-card p-6 md:p-8 hover:bg-[var(--card-bg-hover)] hover:shadow-xl hover:shadow-[var(--card-shadow-hover)] transition-all duration-300 group-hover:border-blue-500/30">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
                 <div>
                     <h4 className="text-xl font-bold text-white mb-1">{title}</h4>
-                    <p className="text-sm text-teal-400 font-medium">{company}</p>
+                    <p className="text-sm text-blue-400 font-medium">{company}</p>
                 </div>
-                <span className={`text-xs font-semibold px-3 py-1 rounded-full border shrink-0 ${isHighlight ? 'text-teal-400 border-teal-500/30 bg-teal-500/10' : 'text-neutral-400 border-white/10 bg-white/5'}`}>
+                <span className={`text-xs font-semibold px-3 py-1 rounded-full border shrink-0 ${isHighlight ? 'text-blue-400 border-blue-500/30 bg-blue-500/10' : 'text-neutral-400 border-white/10 bg-white/5'}`}>
                     {year}
                 </span>
             </div>
@@ -35,7 +35,7 @@ const TimelineItem = ({ year, title, company, description, delay, isHighlight = 
                 <ul className="text-neutral-400 text-sm leading-relaxed space-y-2 list-none">
                     {description.map((item, idx) => (
                         <li key={idx} className="flex gap-2 items-start">
-                            <span className="text-teal-500 mt-0.5 opacity-50">▹</span>
+                            <span className="text-blue-500 mt-0.5 opacity-50">▹</span>
                             <span>{item}</span>
                         </li>
                     ))}
@@ -98,7 +98,7 @@ const Experience = () => {
                         viewport={{ once: true }}
                         className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 mb-6"
                     >
-                        <span className="text-xs font-semibold text-teal-400 tracking-wider uppercase">Journey</span>
+                        <span className="text-xs font-semibold text-blue-400 tracking-wider uppercase">Journey</span>
                     </motion.div>
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}

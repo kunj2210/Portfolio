@@ -8,8 +8,8 @@ const Hero = () => {
         <section id="home" className="relative min-h-screen flex text-left items-center justify-center pt-20 overflow-hidden">
 
             {/* Background Glows */}
-            <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-teal-500/10 rounded-full blur-[120px] pointer-events-none -z-10 mix-blend-screen" />
-            <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-emerald-500/10 rounded-full blur-[100px] pointer-events-none -z-10 mix-blend-screen" />
+            <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px] pointer-events-none -z-10 mix-blend-screen" />
+            <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-[100px] pointer-events-none -z-10 mix-blend-screen" />
 
             {/* Floating 3D Orb Particles */}
             <div className="orb w-3 h-3 animate-float" style={{ top: '20%', left: '10%', animationDelay: '0s' }} />
@@ -32,14 +32,14 @@ const Hero = () => {
                     <motion.div
                         animate={{ rotateY: 360 }}
                         transition={{ duration: 8, ease: 'linear', repeat: Infinity }}
-                        className="absolute inset-[-8px] rounded-full border border-teal-500/30 border-dashed"
+                        className="absolute inset-[-8px] rounded-full border border-blue-500/30 border-dashed"
                         style={{ transformStyle: 'preserve-3d' }}
                     />
                     {/* Pulsing ring */}
-                    <div className="absolute inset-0 rounded-full border-2 border-teal-400/20"
+                    <div className="absolute inset-0 rounded-full border-2 border-blue-400/20"
                         style={{ animation: 'pulse-ring 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite' }} />
 
-                    <div className="w-32 h-32 md:w-40 md:h-40 rounded-full p-1 bg-gradient-to-br from-teal-500 to-emerald-500">
+                    <div className="w-32 h-32 md:w-40 md:h-40 rounded-full p-1 bg-gradient-to-br from-blue-500 to-blue-500">
                         <div className="w-full h-full rounded-full overflow-hidden border-4 border-[#0a0a0a]">
                             <img
                                 src={profileImg}
@@ -57,7 +57,7 @@ const Hero = () => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-card mb-8 animate-float-slow"
                 >
-                    <span className="w-2 h-2 rounded-full bg-teal-500 animate-pulse" />
+                    <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
                     <span className="text-sm font-medium text-neutral-300">Available for work</span>
                 </motion.div>
 
