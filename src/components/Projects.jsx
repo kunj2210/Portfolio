@@ -10,11 +10,11 @@ const ProjectCard = ({ title, description, tags, link, github, features, delay }
         viewport={{ once: true }}
         transition={{ delay, duration: 0.6 }}
     >
-        <TiltCard className="glass-card group p-8 flex flex-col h-full hover:border-teal-500/50 hover:bg-[var(--card-bg-hover)] hover:shadow-2xl hover:shadow-teal-500/20 transition-all duration-300 overflow-hidden">
+        <TiltCard className="glass-card group p-8 flex flex-col h-full hover:border-purple-500/50 hover:bg-[var(--card-bg-hover)] hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 overflow-hidden">
 
             <div className="flex flex-col flex-grow">
                 <div className="flex justify-between items-start mb-6">
-                    <h3 className="text-2xl font-bold text-white group-hover:text-teal-400 transition-colors" style={{ transform: 'translateZ(20px)' }}>{title}</h3>
+                    <h3 className="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors" style={{ transform: 'translateZ(20px)' }}>{title}</h3>
                     <div className="flex gap-2 shrink-0">
                         {github && (
                             <a href={github} target="_blank" rel="noreferrer" className="w-8 h-8 rounded bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white/10 text-neutral-400 hover:text-white transition-colors">
@@ -35,7 +35,7 @@ const ProjectCard = ({ title, description, tags, link, github, features, delay }
                     <ul className="text-neutral-400 text-sm space-y-2 mb-8 flex-grow list-none">
                         {features.map((feature, idx) => (
                             <li key={idx} className="flex gap-2 items-start shrink-0">
-                                <div className="w-1.5 h-1.5 bg-teal-400 rotate-45 mt-1.5 shrink-0" />
+                                <div className="w-1.5 h-1.5 bg-cyan-400 rotate-45 mt-1.5 shrink-0" />
                                 <span className="leading-snug">{feature}</span>
                             </li>
                         ))}
@@ -57,33 +57,33 @@ const ProjectCard = ({ title, description, tags, link, github, features, delay }
 const Projects = () => {
     const projects = [
         {
-            title: "AI Powered Recipe Generator",
-            description: "A full-stack, dual-engine recipe application with blended retrieval & generation workflows.",
-            tags: ["React", "Express", "Node.js", "MongoDB", "Python"],
+            title: "Cook To Go | AI Recipe Generator",
+            description: "A dual-engine recipe generation platform utilizing hybrid AI models. Implemented a sophisticated retrieval-augmented generation (RAG) workflow to provide highly accurate and creative culinary solutions.",
+            tags: ["React", "Express", "Node.js", "MongoDB", "Python", "Transformers"],
             github: "https://github.com/manthan2876/AI-Powered-Recipe-Generator",
             features: [
-                "Retrieval engine using Jaccard & TF-IDF Similarity against Kaggle RecipeNLG.",
-                "Generative engine powered by locally fine-tuned t5-small.",
-                "Secure JWT authentication & optimized queries."
+                "Transformer-based generative engine using locally fine-tuned T5 models for creative recipe synthesis.",
+                "High-performance retrieval system utilizing Jaccard & TF-IDF similarity against large-scale datasets.",
+                "Optimized Python/Node.js integration for real-time inference and seamless user interaction."
             ],
             delay: 0.1
         },
         {
             title: "CivicConnect",
-            description: "A digital platform enabling users to report civic issues, categorized and routed to municipal departments.",
-            tags: ["React Native", "Node.js", "Python", "GIS Mapping"],
+            description: "A scalable, multi-tenant digital platform designed to bridge the gap between citizens and municipal governance. Built a robust backend to handle high-frequency reporting and AI-driven automated routing.",
+            tags: ["React Native", "Node.js", "Python", "GIS Mapping", "AI Fusion"],
             github: "https://github.com/kunj2210/CivicConnect",
             features: [
-                "Geo-tagging and image uploads for precise issue reporting.",
-                "AI-based categorization and automated priority setting.",
-                "Real-time tracking system for citizens to monitor report status."
+                "Multi-modal AI fusion supporting Image (Object Detection), Voice (STT), and Text inputs for reporting.",
+                "Geo-intelligence and real-time mapping for automated issue categorization and priority routing.",
+                "Scalable, multi-tenant architecture designed for massive user loads with real-time status tracking."
             ],
             delay: 0.2
         }
     ];
 
     return (
-        <section id="projects" className="section relative border-y border-white/5 bg-[#0a0a0a]">
+        <section id="projects" className="section relative border-y border-white/5 bg-[#050505]">
             <div className="container px-6">
 
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
@@ -94,7 +94,7 @@ const Projects = () => {
                             viewport={{ once: true }}
                             className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 mb-4"
                         >
-                            <span className="text-xs font-semibold text-teal-400 tracking-wider uppercase">Portfolio</span>
+                            <span className="text-xs font-semibold text-cyan-400 tracking-wider uppercase">Portfolio</span>
                         </motion.div>
                         <motion.h2
                             initial={{ opacity: 0, y: 20 }}

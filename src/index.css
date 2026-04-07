@@ -6,19 +6,20 @@
 
 @layer base {
     :root {
-        --bg-dark: #0a0a0a;
-        --text-primary: #f5f5f5;
-        --text-secondary: #a3a3a3;
-        --accent-teal: #14b8a6;
-        --accent-teal-glow: rgba(20, 184, 166, 0.5);
-        --card-bg: rgba(255, 255, 255, 0.05);
-        --card-border: rgba(255, 255, 255, 0.12);
+        --bg-dark: #050505;
+        --text-primary: #ffffff;
+        --text-secondary: #94a3b8;
+        --accent-purple: #8b5cf6;
+        --accent-blue: #06b6d4;
+        --accent-purple-glow: rgba(139, 92, 246, 0.5);
+        --card-bg: rgba(15, 23, 42, 0.4);
+        --card-border: rgba(255, 255, 255, 0.05);
         --card-bg-hover: rgba(255, 255, 255, 0.08);
-        --card-shadow-hover: rgba(20, 184, 166, 0.1);
+        --card-shadow-hover: rgba(139, 92, 246, 0.1);
     }
 
     body {
-        @apply bg-[#0a0a0a] text-[#f5f5f5] font-sans antialiased selection:bg-teal-500/30 selection:text-teal-200 overflow-x-hidden;
+        @apply bg-[#050505] text-white font-sans antialiased selection:bg-purple-500/30 selection:text-purple-200 overflow-x-hidden;
     }
 }
 
@@ -47,7 +48,7 @@
     }
 
     .btn-primary {
-        @apply bg-teal-500 text-white hover:bg-teal-400 hover:shadow-[0_0_15px_var(--accent-teal-glow)] shadow-sm;
+        @apply bg-gradient-to-r from-purple-500 to-cyan-500 text-white hover:opacity-90 hover:shadow-[0_0_20px_var(--accent-purple-glow)] shadow-sm;
     }
 
     .btn-secondary {
@@ -59,7 +60,7 @@
     }
 
     .text-gradient {
-        @apply bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-emerald-300;
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-cyan-400 to-blue-500;
     }
 
     .nav-link {
@@ -68,7 +69,7 @@
 
     .nav-link.active::after {
         content: '';
-        @apply absolute -bottom-1 left-0 w-full h-[2px] bg-teal-500 rounded-full;
+        @apply absolute -bottom-1 left-0 w-full h-[2px] bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full shadow-[0_0_10px_var(--accent-purple-glow)];
     }
 
 
@@ -158,11 +159,11 @@
     animation: float 3.5s ease-in-out infinite;
 }
 
-/* Floating teal orb particle */
+/* Floating purple orb particle */
 .orb {
     position: absolute;
     border-radius: 9999px;
-    background: radial-gradient(circle, rgba(20, 184, 166, 0.35) 0%, rgba(20, 184, 166, 0) 70%);
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.35) 0%, rgba(139, 92, 246, 0) 70%);
     filter: blur(1px);
     pointer-events: none;
 }

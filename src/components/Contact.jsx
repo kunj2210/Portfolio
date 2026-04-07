@@ -6,7 +6,7 @@ const Contact = () => {
     return (
         <section id="contact" className="section relative overflow-hidden">
             {/* Background decoration */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-cyan-500/5 rounded-full blur-[120px] -z-10" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-purple-500/5 rounded-full blur-[120px] -z-10" />
 
             <div className="container">
                 <div className="grid md:grid-cols-2 gap-16 items-start">
@@ -16,12 +16,11 @@ const Contact = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h2 className="text-sm uppercase tracking-[0.3em] text-cyan-400 font-semibold mb-3">Contact</h2>
-                        <h3 className="text-4xl md:text-5xl font-bold mb-8">Let's Create <br /><span className="text-gradient">Something Great</span></h3>
+                        <h2 className="text-sm uppercase tracking-[0.3em] text-purple-400 font-semibold mb-3">Contact</h2>
+                        <h3 className="text-4xl md:text-5xl font-bold mb-8">Let's Build <br /><span className="text-gradient">Something Impactful</span></h3>
                         <p className="text-secondary text-lg mb-10">
-                            Have a project in mind or just want to say hi? Feel free to reach out.
-                            I'm always open to discussing new projects, creative ideas or opportunities
-                            to be part of your visions.
+                            I am currently seeking opportunities to apply my expertise in Software Engineering and AI systems to high-impact projects.
+                            Whether you're looking for a dedicated engineer for your team, have a collaborative idea, or just want to discuss the latest in tech, I'd love to hear from you.
                         </p>
 
                         <div className="space-y-6">
@@ -31,7 +30,7 @@ const Contact = () => {
                                 { icon: MapPin, label: "Location", value: "Surat, Gujarat, India" }
                             ].map((item, i) => (
                                 <div key={i} className="flex items-center gap-4">
-                                    <div className="w-12 h-12 glass flex items-center justify-center text-cyan-400">
+                                    <div className="w-12 h-12 glass flex items-center justify-center text-purple-400">
                                         <item.icon size={20} />
                                     </div>
                                     <div>

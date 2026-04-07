@@ -18,15 +18,15 @@ const TimelineItem = ({ year, title, company, description, delay, isHighlight = 
         <div className="absolute left-[3px] top-2 bottom-[-8px] w-px bg-white/10 group-last:bg-transparent" />
 
         {/* Clean Minimal Marker */}
-        <div className="absolute left-0 top-2 w-2 h-2 rounded-full ring-4 ring-[#0a0a0a] bg-teal-400" />
+        <div className="absolute left-0 top-2 w-2 h-2 rounded-full ring-4 ring-[#0a0a0a] bg-purple-400" />
 
-        <div className="glass-card p-6 md:p-8 hover:bg-[var(--card-bg-hover)] hover:shadow-xl hover:shadow-[var(--card-shadow-hover)] transition-all duration-300 group-hover:border-teal-500/30">
+        <div className="glass-card p-6 md:p-8 hover:bg-[var(--card-bg-hover)] hover:shadow-xl hover:shadow-[var(--card-shadow-hover)] transition-all duration-300 group-hover:border-purple-500/30">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
                 <div>
                     <h4 className="text-xl font-bold text-white mb-1">{title}</h4>
-                    <p className="text-sm text-teal-400 font-medium">{company}</p>
+                    <p className="text-sm text-purple-400 font-medium">{company}</p>
                 </div>
-                <span className="text-xs font-semibold px-3 py-1 rounded-full border shrink-0 text-teal-400 border-teal-500/30 bg-teal-500/10">
+                <span className="text-xs font-semibold px-3 py-1 rounded-full border shrink-0 text-purple-400 border-purple-500/30 bg-purple-500/10">
                     {year}
                 </span>
             </div>
@@ -35,7 +35,7 @@ const TimelineItem = ({ year, title, company, description, delay, isHighlight = 
                 <ul className="text-neutral-400 text-sm leading-relaxed space-y-2 list-none">
                     {description.map((item, idx) => (
                         <li key={idx} className="flex gap-2 items-start">
-                            <div className="w-1.5 h-1.5 bg-teal-400 rotate-45 mt-1.5 shrink-0" />
+                            <div className="w-1.5 h-1.5 bg-purple-400 rotate-45 mt-1.5 shrink-0" />
                             <span>{item}</span>
                         </li>
                     ))}
@@ -54,9 +54,10 @@ const Experience = () => {
             title: "Full Stack Developer INTERN",
             company: "Hopiant",
             description: [
-                "Learned to design and develop Shopify web stores and create user interface designs using tools like Figma.",
-                "Gained hands-on experience building responsive layouts and implementing functional e-commerce features.",
-                "Enhanced professional communication by gathering requirements from clients, sharing updates, and handling feedback."
+                "Developed and customized liquid-based e-commerce solutions using Shopify, significantly improving store functionality and client conversion rates.",
+                "Translated complex Figma designs into high-fidelity, responsive frontend components using modern CSS and React principles.",
+                "Collaborated with cross-functional teams to deliver user-centric UI/UX improvements, ensuring brand consistency across various digital touchpoints.",
+                "Gained hands-on experience in rapid prototyping and agile development, meeting tight deadlines for high-profile client deliverables."
             ],
             delay: 0.1,
             isHighlight: true
@@ -98,7 +99,7 @@ const Experience = () => {
                         viewport={{ once: true }}
                         className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 mb-6"
                     >
-                        <span className="text-xs font-semibold text-teal-400 tracking-wider uppercase">Journey</span>
+                        <span className="text-xs font-semibold text-purple-400 tracking-wider uppercase">Journey</span>
                     </motion.div>
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}

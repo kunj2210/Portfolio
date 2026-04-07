@@ -9,7 +9,7 @@ const SkillPill = ({ name, delay }) => (
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ delay, duration: 0.3 }}
-        className="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-neutral-300 text-sm font-medium hover:bg-teal-500/10 hover:text-teal-400 hover:border-teal-500/30 transition-colors cursor-default whitespace-nowrap"
+        className="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-neutral-300 text-sm font-medium hover:bg-purple-500/10 hover:text-purple-400 hover:border-purple-500/30 transition-colors cursor-default whitespace-nowrap"
     >
         {name}
     </motion.div>
@@ -22,10 +22,10 @@ const SkillCategory = ({ title, icon: Icon, skills, delay }) => (
         viewport={{ once: true }}
         transition={{ delay, duration: 0.5 }}
     >
-        <TiltCard className="glass-card p-8 flex flex-col h-full bg-white/5 border border-white/10 rounded-2xl hover:border-teal-500/30 hover:bg-white/[0.07] hover:shadow-2xl hover:shadow-teal-500/20 group transition-all duration-300 overflow-hidden">
+        <TiltCard className="glass-card p-8 flex flex-col h-full bg-white/5 border border-white/10 rounded-2xl hover:border-purple-500/30 hover:bg-white/[0.07] hover:shadow-2xl hover:shadow-purple-500/20 group transition-all duration-300 overflow-hidden">
 
             <div className="flex items-center gap-4 mb-8">
-                <div className="w-12 h-12 rounded-xl bg-teal-500/5 border border-teal-500/10 flex items-center justify-center text-teal-400 group-hover:bg-teal-500/10 group-hover:border-teal-500/20 transition-colors" style={{ transform: 'translateZ(20px)' }}>
+                <div className="w-12 h-12 rounded-xl bg-purple-500/5 border border-purple-500/10 flex items-center justify-center text-purple-400 group-hover:bg-purple-500/10 group-hover:border-purple-500/20 transition-colors" style={{ transform: 'translateZ(20px)' }}>
                     <Icon size={24} />
                 </div>
                 <h3 className="text-xl font-bold text-white" style={{ transform: 'translateZ(15px)' }}>{title}</h3>
@@ -43,29 +43,29 @@ const SkillCategory = ({ title, icon: Icon, skills, delay }) => (
 const Skills = () => {
     const skillCategories = [
         {
-            title: "Programming",
+            title: "Core Programming",
             icon: Code,
-            skills: ["Java", "JavaScript", "C/C++", "Python"]
+            skills: ["Java", "Python", "JavaScript", "C/C++", "Data Structures", "Algorithms"]
         },
         {
-            title: "Libraries",
+            title: "AI & Machine Learning",
             icon: Binary,
-            skills: ["Pandas", "Numpy", "Scikit-Learn", "Matplotlib", "Seaborn", "PyTorch", "TensorFlow"]
+            skills: ["NLP", "Transformers", "LLMs", "Generative AI", "YOLOv8", "Scikit-Learn", "TensorFlow", "PyTorch"]
         },
         {
-            title: "Frameworks & Web",
+            title: "Full Stack Development",
             icon: Globe,
-            skills: ["React.js", "Node.js", "Express", "MongoDB", "HTML", "CSS"]
+            skills: ["React.js", "Node.js", "Express.js", "FastAPI", "REST APIs", "MERN Stack", "Auth-JWT"]
         },
         {
-            title: "Tools & Analytics",
+            title: "Engineering Tools & Data",
             icon: BarChart3,
-            skills: ["Power BI", "Tableau", "Jupyter Notebooks", "MySQL", "MongoDB Atlas", "Git", "GitHub", "Figma", "UI/UX Principles"]
+            skills: ["PostgreSQL", "MongoDB", "MySQL", "Docker", "Git", "Jupyter", "Power BI", "Tableau", "Figma"]
         }
     ];
 
     return (
-        <section id="skills" className="section relative border-t border-white/5 bg-[#0a0a0a]">
+        <section id="skills" className="section relative border-t border-white/5 bg-[#050505]">
             <div className="container px-6">
 
                 <div className="text-center mb-20">
@@ -73,9 +73,9 @@ const Skills = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-teal-500/5 border border-teal-500/10 mb-6"
+                        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-500/5 border border-purple-500/10 mb-6"
                     >
-                        <span className="text-xs font-bold text-teal-400 tracking-widest uppercase">Expertise</span>
+                        <span className="text-xs font-bold text-purple-400 tracking-widest uppercase">Expertise</span>
                     </motion.div>
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}

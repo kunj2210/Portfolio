@@ -26,9 +26,9 @@ function App() {
     }, []);
 
     return (
-        <div className="bg-[#0a0a0a] min-h-screen flex flex-col">
+        <div className="bg-[#050505] min-h-screen flex flex-col">
             <motion.div
-                className="fixed top-0 left-0 right-0 h-1 bg-teal-500 origin-left z-[100]"
+                className="fixed top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-purple-500 to-cyan-400 z-[100] origin-left shadow-[0_0_15px_rgba(139,92,246,0.5)]"
                 style={{ scaleX }}
             />
             <Navbar />
@@ -47,7 +47,7 @@ function App() {
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.5, y: 20 }}
                         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                        className="fixed bottom-8 right-8 z-50 w-12 h-12 rounded-full glass-card flex items-center justify-center text-teal-400 border-teal-500/50 hover:bg-teal-500/10 transition-colors cursor-pointer"
+                        className="fixed bottom-8 right-8 z-50 w-12 h-12 rounded-full glass-card flex items-center justify-center text-purple-400 border-purple-500/50 hover:bg-purple-500/10 transition-colors cursor-pointer"
                     >
                         <ChevronUp size={24} />
                     </motion.button>

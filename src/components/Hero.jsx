@@ -1,15 +1,37 @@
 ﻿import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, ArrowRight, Download } from 'lucide-react';
-import profileImg from '../assets/profile.jpg';
+import profileImg from '../assets/profile.jpeg';
 
 const Hero = () => {
+    const container = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.05,
+                delayChildren: 0.3
+            }
+        }
+    };
+
+    const letter = {
+        hidden: { opacity: 0, y: 20 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: { type: "spring", stiffness: 100 }
+        }
+    };
+
+    const name = "Kunj";
+
     return (
         <section id="home" className="relative min-h-screen flex text-left items-center justify-center pt-20 overflow-hidden">
 
             {/* Background Glows */}
-            <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-teal-500/10 rounded-full blur-[120px] pointer-events-none -z-10 mix-blend-screen" />
-            <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-emerald-500/10 rounded-full blur-[100px] pointer-events-none -z-10 mix-blend-screen" />
+            <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-purple-500/10 rounded-full blur-[120px] pointer-events-none -z-10 mix-blend-screen" />
+            <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-cyan-500/10 rounded-full blur-[100px] pointer-events-none -z-10 mix-blend-screen" />
 
             {/* Floating 3D Orb Particles */}
             <div className="orb w-3 h-3 animate-float" style={{ top: '20%', left: '10%', animationDelay: '0s' }} />
@@ -32,14 +54,14 @@ const Hero = () => {
                     <motion.div
                         animate={{ rotateY: 360 }}
                         transition={{ duration: 8, ease: 'linear', repeat: Infinity }}
-                        className="absolute inset-[-8px] rounded-full border border-teal-500/30 border-dashed"
+                        className="absolute inset-[-8px] rounded-full border border-purple-500/30 border-dashed"
                         style={{ transformStyle: 'preserve-3d' }}
                     />
                     {/* Pulsing ring */}
-                    <div className="absolute inset-0 rounded-full border-2 border-teal-400/20"
+                    <div className="absolute inset-0 rounded-full border-2 border-purple-400/20"
                         style={{ animation: 'pulse-ring 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite' }} />
 
-                    <div className="w-32 h-32 md:w-40 md:h-40 rounded-full p-1 bg-gradient-to-br from-teal-500 to-emerald-500">
+                    <div className="w-32 h-32 md:w-40 md:h-40 rounded-full p-1 bg-gradient-to-br from-purple-500 to-cyan-500">
                         <div className="w-full h-full rounded-full overflow-hidden border-4 border-[#0a0a0a]">
                             <img
                                 src={profileImg}
@@ -57,7 +79,7 @@ const Hero = () => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-card mb-8 animate-float-slow"
                 >
-                    <span className="w-2 h-2 rounded-full bg-teal-500 animate-pulse" />
+                    <span className="w-2 h-2 rounded-full bg-purple-500 animate-pulse shadow-[0_0_8px_rgba(139,92,246,0.8)]" />
                     <span className="text-sm font-medium text-neutral-300">Available for work</span>
                 </motion.div>
 
@@ -68,7 +90,14 @@ const Hero = () => {
                     transition={{ delay: 0.3, duration: 0.5 }}
                 >
                     Hi, I'm <br className="md:hidden" />
-                    <span className="text-gradient">Kunj Lunagariya.</span>
+                    <motion.span
+                        variants={container}
+                        initial="hidden"
+                        animate="visible"
+                        className="text-gradient inline-flex"
+                    >
+                        {name.split("").map((char, index) => (char === " " ? <span key={index}>&nbsp;</span> : <motion.span key={index} variants={letter} className="inline-block">{char}</motion.span>))}
+                    </motion.span>
                 </motion.h1>
 
                 <motion.p
@@ -77,7 +106,7 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4, duration: 0.5 }}
                 >
-                    I am a passionate <span className="text-white font-medium">Full Stack Developer</span>, <span className="text-white font-medium">Data Analyst</span> and <span className="text-white font-medium">Problem Solver</span> based in India. I specialize in building robust web applications and have a strong foundation in Data Analysis.
+                    I am a <span className="text-white font-medium">Software Engineer</span> & <span className="text-white font-medium">Full Stack Developer</span> specializing in AI-driven, scalable applications. I build intelligent, data-driven solutions designed for performance and high impact.
                 </motion.p>
 
                 <motion.div
@@ -101,7 +130,7 @@ const Hero = () => {
                         whileTap={{ scale: 0.97 }}
                         className="btn btn-secondary w-full sm:w-auto !px-8"
                     >
-                        <Download size={18} className="text-neutral-400" /> Download CV
+                        <Download size={18} className="text-purple-400" /> Download CV
                     </motion.a>
                 </motion.div>
 
@@ -124,7 +153,7 @@ const Hero = () => {
                             whileHover={{ scale: 1.15, y: -3, rotate: 5 }}
                             whileTap={{ scale: 0.9 }}
                             transition={{ type: 'spring', stiffness: 400 }}
-                            className="btn-icon"
+                            className="btn-icon hover:border-purple-500/30 hover:text-purple-400 transition-all"
                         >
                             <Icon size={20} />
                         </motion.a>
